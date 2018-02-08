@@ -8,6 +8,7 @@ public class Product {
     private String image;
     private String name;
     private String skills;
+    //private Integer id;
 
     public Product(String image, String name, String price) {
         this.image = image;
@@ -38,4 +39,14 @@ public class Product {
     public void setSkills(String price) {
         this.skills = price;
     }
+    /*public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer price) {
+        this.id = price;
+    }*/
+
+
+
 }

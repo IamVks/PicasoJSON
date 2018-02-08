@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("https://test-api.nevaventures.com/");
+               // new ReadJSON().execute("https://test-api.nevaventures.com/");
+                new ReadJSON().execute("https://api.myjson.com/bins/1ei5ax");
             }
         });
     }
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String content) {
+
             try {
                 JSONObject jsonObject = new JSONObject(content);
                 JSONArray jsonArray =  jsonObject.getJSONArray("data");

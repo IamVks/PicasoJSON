@@ -47,8 +47,11 @@ public class CustomListAdapter extends ArrayAdapter<Product> {
         TextView txtName = (TextView) convertView.findViewById(R.id.txtName);
         txtName.setText(product.getName());
 
-        TextView txtPrice = (TextView) convertView.findViewById(R.id.txtskills);
-        txtPrice.setText(product.getSkills());
+        TextView txtSkills = (TextView) convertView.findViewById(R.id.txtskills);
+        txtSkills.setText(product.getSkills());
+
+       // TextView txtSid = (TextView) convertView.findViewById(R.id.idsd);
+        //txtSid.setText(product.getId());
 
         return convertView;
     }
